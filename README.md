@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Israel Oyeboade - Software Engineer Portfolio
 
-## Getting Started
+A modern, high-performance portfolio website built with **Next.js 15**, **Tailwind CSS**, and **Sanity.io**. This project showcases my work as a Senior Backend & Full Stack Engineer, featuring dynamic content management, smooth animations, and a responsive design.
 
-First, run the development server:
+## 🚀 Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+-   **Framework:** [Next.js 15](https://nextjs.org/) (App Router)
+-   **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+-   **Animations:** [Framer Motion](https://www.framer.com/motion/)
+-   **CMS:** [Sanity.io](https://www.sanity.io/) (Headless CMS)
+-   **Icons:** [Lucide React](https://lucide.dev/)
+-   **Fonts:** [Figtree](https://fonts.google.com/specimen/Figtree) & [Monoton](https://fonts.google.com/specimen/Monoton)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+-   **Dynamic Content:** Projects, Work Experience, Tech Stack, and Blog posts are managed via Sanity Studio.
+-   **Responsive Design:** Fully optimized for all device sizes.
+-   **Dark Mode:** Sleek dark-themed UI with vibrant accents.
+-   **Interactive UI:** Smooth scroll animations and hover effects using Framer Motion.
+-   **Embedded Studio:** Sanity Studio embedded directly at `/studio` for easy content updates.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Getting Started
 
-## Learn More
+1.  **Clone the repository:**
 
-To learn more about Next.js, take a look at the following resources:
+    ```bash
+    git clone https://github.com/israel-oye/portfolio-new.git
+    cd portfolio-new
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2.  **Install dependencies:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    ```bash
+    npm install
+    ```
 
-## Deploy on Vercel
+3.  **Set up Environment Variables:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    Create a `.env.local` file in the root directory and add your Sanity credentials:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    ```env
+    NEXT_PUBLIC_SANITY_PROJECT_ID=your_project_id
+    NEXT_PUBLIC_SANITY_DATASET=production
+    NEXT_PUBLIC_SANITY_API_VERSION=2024-01-01
+    ```
+
+4.  **Run the development server:**
+
+    ```bash
+    npm run dev
+    ```
+
+    Open [http://localhost:3000](http://localhost:3000) to view the site.
+    Access the CMS at [http://localhost:3000/studio](http://localhost:3000/studio).
+
+## 📝 Content Management (Sanity)
+
+This project uses Sanity.io for content management. The schemas are defined in `src/sanity/schemaTypes/`.
+
+-   **Projects:** Add featured projects with images, descriptions, and links.
+-   **Experience:** Manage work history (currently hardcoded fallback available).
+-   **Tech Stack:** Define technologies with categories and icons.
+-   **Blog:** Create and publish blog posts.
+-   **Settings:** Upload your resume PDF.
+
+## 🚀 Deployment
+
+The easiest way to deploy is using [Vercel](https://vercel.com/).
+
+1.  Push your code to GitHub.
+2.  Import the project in Vercel.
+3.  Add the Environment Variables in Vercel settings.
+4.  Deploy!
