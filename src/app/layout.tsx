@@ -10,7 +10,7 @@ const figtree = Figtree({ subsets: ["latin"], variable: "--font-figtree" });
 const monoton = Monoton({ weight: "400", subsets: ["latin"], variable: "--font-monoton" });
 
 export const metadata: Metadata = {
-  title: "Israel Oyeboade | Backend & Full Stack Engineer",
+  title: "Israel Oyebọade | Backend & Full Stack Engineer",
   description: "Portfolio of Israel Oyeboade, a Software Engineer specializing in Python, API Development, and Flutter.",
   icons: {
     icon: "/io-logo.ico",
