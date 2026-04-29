@@ -11,6 +11,7 @@ interface ProjectItem {
     description: string;
     tags: string[];
     imageUrl?: string;
+    slug?: string;
     links: {
         github: string;
         demo: string;
@@ -101,6 +102,16 @@ export default function FeaturedProjectsClient({ projects }: FeaturedProjectsCli
                                     </span>
                                 ))}
                             </div>
+                            
+                            {project.slug && (
+                                <div className="mt-6">
+                                    <Button asChild variant="secondary" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                                        <Link href={`/projects/${project.slug}`}>
+                                            View Details
+                                        </Link>
+                                    </Button>
+                                </div>
+                            )}
                         </div>
                     </motion.div>
                 ))}

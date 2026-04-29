@@ -48,5 +48,43 @@ export const project = defineType({
             title: 'GitHub Link',
             type: 'url',
         }),
+        defineField({
+            name: 'details',
+            title: 'Project Details',
+            type: 'object',
+            fields: [
+                defineField({ name: 'role', title: 'My Role', type: 'string' }),
+                defineField({ name: 'duration', title: 'Duration', type: 'string' }),
+                defineField({ name: 'overview', title: 'Overview', type: 'array', of: [{ type: 'block' }] }),
+                defineField({ name: 'designChoices', title: 'Design Choices', type: 'array', of: [{ type: 'block' }] }),
+                defineField({ name: 'engineeringApproach', title: 'Engineering Approach', type: 'array', of: [{ type: 'block' }] }),
+                defineField({ name: 'challenges', title: 'Challenges & Solutions', type: 'array', of: [{ type: 'block' }] }),
+            ],
+        }),
+        defineField({
+            name: 'projectImages',
+            title: 'Project Images',
+            description: 'System design diagrams, ERDs, screenshots, architecture diagrams, etc.',
+            type: 'array',
+            of: [
+                {
+                    type: 'image',
+                    options: { hotspot: true },
+                    fields: [
+                        defineField({
+                            name: 'caption',
+                            title: 'Caption',
+                            type: 'string',
+                            description: 'e.g. "System Architecture Diagram" or "Entity Relationship Diagram"',
+                        }),
+                        defineField({
+                            name: 'alt',
+                            title: 'Alt Text',
+                            type: 'string',
+                        }),
+                    ],
+                },
+            ],
+        }),
     ],
 })

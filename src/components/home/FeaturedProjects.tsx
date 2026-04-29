@@ -44,6 +44,7 @@ export default async function FeaturedProjects() {
         if (data && data.length > 0) {
             projects = data.map((item: any) => ({
                 title: item.title,
+                slug: item.slug?.current || '',
                 description: item.description,
                 tags: item.technologies ? item.technologies.map((t: any) => t.name) : [],
                 imageUrl: item.imageUrl,

@@ -99,7 +99,7 @@ export default function Hero() {
                     <div className="relative w-full h-full rounded-full border-4 border-background shadow-xl overflow-hidden bg-muted">
                         {/* Profile Image */}
                         <img
-                            src="/profile-2.jpg"
+                            src="/profile-4.jpg"
                             alt="Israel Oyeboade"
                             className="w-full h-full object-cover"
                         />

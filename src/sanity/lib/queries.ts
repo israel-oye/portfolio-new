@@ -19,13 +19,39 @@ export const PROJECTS_QUERY = defineQuery(`*[_type == "project"] | order(_create
   title,
   slug,
   description,
-  description,
   "imageUrl": mainImage.asset->url,
   link,
   githubLink,
   technologies[]->{
     name,
     icon
+  }
+}`);
+
+export const PROJECT_BY_SLUG_QUERY = defineQuery(`*[_type == "project" && slug.current == $slug][0] {
+  _id,
+  title,
+  slug,
+  description,
+  "imageUrl": mainImage.asset->url,
+  link,
+  githubLink,
+  technologies[]->{
+    name,
+    "icon": icon.asset->url
+  },
+  "projectImages": projectImages[] {
+    "url": asset->url,
+    caption,
+    alt
+  },
+  details {
+    role,
+    duration,
+    overview,
+    designChoices,
+    engineeringApproach,
+    challenges
   }
 }`);
 

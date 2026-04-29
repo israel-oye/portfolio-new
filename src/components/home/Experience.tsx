@@ -3,20 +3,28 @@ import ExperienceClient from "./ExperienceClient";
 
 const fallbackExperiences = [
     {
+        company: "Osun State University Alumni Association",
+        role: "Freelance Backend Engineer",
+        period: "02/2026 - Present",
+        description:
+            "Leading the development and maintenance of the backend system of Osun State University Alumni Association member portal. Architected and deployed a production ledger API covering member management and dues billing including Paystack payment integration.",
+        tags: ["Backend", "Payment Gateway Integration", "Production", "API Design"],
+    },
+    {
         company: "ScalaWares",
         role: "Backend Developer",
         period: "08/2025 - Present",
         description:
-            "Designed and implemented 72 API endpoints for multi-tenant enterprise CRM system. Built secure authentication infrastructure supporting JWT and OAuth2.",
-        tags: ["Python", "Django", "OAuth2", "API Design"],
+            "Designed and implemented 72 API endpoints for multi-tenant enterprise CRM system. Built secure authentication infrastructure supporting JWT and OAuth2. Implemented a backend for an AI-assisted receipt-details extractor.",
+        tags: ["Python", "Django", "FastAPI", "OAuth2", "API Design", "AI"],
     },
     {
         company: "Aptech Computer Education",
-        role: "Technical Instructor",
+        role: "Faculty Instructor",
         period: "01/2025 - Present",
         description:
-            "Instructed 50+ students in full-stack development. Developed hands-on projects including e-commerce applications and API integrations.",
-        tags: ["Teaching", "Full Stack", "Mentorship"],
+            "Instructed 50+ students in full-stack development and software engineering principles.",
+        tags: ["Teaching", "Mentorship"],
     },
     {
         company: "Proofly/CerVer",
@@ -32,7 +40,7 @@ const fallbackExperiences = [
         period: "03/2024 - 12/2024",
         description:
             "Developed email notification system and contact management APIs. Implemented Docker containerization for consistent deployment.",
-        tags: ["Docker", "Microservices", "AI Integration"],
+        tags: ["Docker", "API Development"],
     },
     {
         company: "Pusheat",

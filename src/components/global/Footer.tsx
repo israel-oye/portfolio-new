@@ -16,7 +16,7 @@ export default function Footer() {
 
                 <div className="flex items-center gap-6">
                     <Link
-                        href="https://github.com"
+                        href="https://github.com/israel-oye"
                         target="_blank"
                         className="text-muted-foreground hover:text-primary transition-colors"
                     >
@@ -24,7 +24,7 @@ export default function Footer() {
                         <span className="sr-only">GitHub</span>
                     </Link>
                     <Link
-                        href="https://linkedin.com"
+                        href="https://www.linkedin.com/in/israel-oyeboade-b4385723a/"
                         target="_blank"
                         className="text-muted-foreground hover:text-primary transition-colors"
                     >
