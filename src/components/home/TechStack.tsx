@@ -124,6 +124,7 @@ export default async function TechStack() {
                                                 alt={item.name}
                                                 fill
                                                 className="object-contain p-1"
+                                                style={{ filter: 'invert(0.85)' }}
                                             />
                                         ) : (
                                             <Cpu className="w-4 h-4" />

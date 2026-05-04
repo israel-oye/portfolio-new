@@ -312,6 +312,7 @@ export default async function ProjectPage({
                                                         width={16}
                                                         height={16}
                                                         className="object-contain"
+                                                        style={{ filter: 'invert(1)' }}
                                                     />
                                                 ) : (
                                                     <div className="w-4 h-4 rounded-sm bg-primary/20 flex-shrink-0" />
