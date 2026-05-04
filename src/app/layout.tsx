@@ -14,9 +14,9 @@ export const metadata: Metadata = {
   title: "Israel Oyebọade | Backend & Full Stack Engineer",
   description: "Portfolio of Israel Oyeboade, a Software Engineer specializing in Python, API Development, and Flutter.",
   icons: {
-    icon: "/io-logo.ico",
-    shortcut: "/io-logo.ico",
-    apple: "/io-logo.ico"
+    icon: [{ url: "/io-logo.ico", type: "image/x-icon" }],
+    shortcut: ["/io-logo.ico"],
+    apple: ["/io-logo.ico"],
   },
   openGraph: {
     title: "Israel Oyebọade | Backend & Full Stack Engineer",
