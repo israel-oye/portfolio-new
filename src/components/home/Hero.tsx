@@ -50,9 +50,8 @@ export default function Hero() {
                         </span>
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
                             Israel Oyebọade.
-                            <br />
-                            <span className="text-muted-foreground">
-                                I build scalable backends.
+                            <span className="text-xl md:text-2xl lg:text-3xl font-medium text-muted-foreground italic block mt-2">
+                                While users interact with beautiful interfaces, I build the backend systsems that make them work
                             </span>
                         </h1>
                     </motion.div>
@@ -63,11 +62,11 @@ export default function Hero() {
                         transition={{ duration: 0.5, delay: 0.2 }}
                         className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed"
                     >
-                        I'm a Software Engineer specializing in{" "}
-                        <span className="text-foreground font-medium">Python</span>,{" "}
-                        <span className="text-foreground font-medium">API Development</span>,
-                        and <span className="text-foreground font-medium">Flutter</span>. I
-                        architect multi-tenant systems and build interactive web experiences.
+                        {/* I'm a Software Engineer specializing in{" "}
+                        <span className="text-foreground font-medium">financial systems</span>,{" "}
+                        <span className="text-foreground font-medium">APIs</span>,
+                        and multi-tenant SaaS platforms. */}
+                        From payment-processing and authentication to RBAC and multi-tenant platforms, I build reliable backend software with Python and Django.
                     </motion.p>
 
                     <motion.div
