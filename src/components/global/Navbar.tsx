@@ -9,11 +9,11 @@ import { cn } from "@/lib/utils";
 import Button from "@/components/ui/Button";
 
 const navItems = [
-    { name: "About", href: "#about" },
-    { name: "Experience", href: "#experience" },
-    { name: "Projects", href: "#projects" },
-    { name: "Tech Stack", href: "#tech-stack" },
-    { name: "Contact", href: "#contact" },
+    { name: "About", href: "/#about" },
+    { name: "Experience", href: "/#experience" },
+    { name: "Projects", href: "/#projects" },
+    { name: "Tech Stack", href: "/#tech-stack" },
+    { name: "Contact", href: "/#contact" },
 ];
 
 interface NavbarProps {
